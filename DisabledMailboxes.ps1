@@ -15,7 +15,7 @@ if (!$Clean -And !$list) {
 	"
 	Break
 }
-$snapinAdded = Get-PSSnapin | Select-String "icrosoft.Exchange.Management.PowerShell.Admin"
+$snapinAdded = Get-PSSnapin | Select-String "Microsoft.Exchange.Management.PowerShell.Admin"
 if (!$snapinAdded) {
 	Add-PSSnapin Microsoft.Exchange.Management.PowerShell.Admin
 }
